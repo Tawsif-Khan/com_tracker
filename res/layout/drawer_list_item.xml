@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/absListViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@layout/nav_drawer_colors" >
+<!-- #FCFBF7 -->
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:adjustViewBounds="true" 
+        
+            android:paddingLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            style="?attr/spinnerDropDownItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:paddingLeft="30dp" 
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            style="?attr/spinnerDropDownItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:paddingLeft="40dp"
+            android:textColor="#494847"  />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tawsif.finalproject"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.example.finalproject.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.finalproject.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.example.finalproject.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <permission
+        android:name="com.example.finalproject.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/google_currents"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name="com.example.finalproject.Flash"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nearby.welcome.Optionalpage"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.example.finalproject.Send" >
+
+            <!-- android:parentActivityName="com.example.Map.PositionMap" > -->
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value="com.example.Map.PositionMap" /> -->
+        </activity>
+        <activity android:name="com.example.finalproject.MainActivity" >
+        </activity>
+        <activity android:name="com.example.finalproject.UserList" >
+        </activity>
+        <activity android:name="com.iiuc.finalproject.registration.RegisterName" >
+        </activity>
+        <activity android:name="com.example.finalproject.GroupList" >
+        </activity>
+        <activity android:name="com.example.finalproject.GroupCreated" >
+        </activity>
+        <activity android:name="com.example.finalproject.ReceiveRequest" >
+        </activity>
+        <activity android:name="com.example.finalproject.SelectMembers" >
+        </activity>
+        <activity android:name="com.example.finalproject.EditProfile" >
+        </activity>
+        <activity android:name="com.iiuc.finalproject.registration.MakeProfile" >
+        </activity>
+        <activity android:name="com.example.Map.PositionMapFragment" >
+        </activity>
+        <activity android:name="com.example.Map.Tempo" >
+        </activity>
+        <activity android:name="com.project.trafficshare.MainPostActivity" >
+        </activity>
+        <activity android:name="com.iiuc.finalproject.registration.SecuritySMS" >
+        </activity>
+        <activity android:name="com.iiuc.finalproject.registration.WaitingForSMS" >
+        </activity>
+        <activity android:name="com.finalproject.luggageguard.SetBlueTooth" >
+        </activity>
+        <activity android:name="com.finalproject.luggageguard.AlarmBox" >
+        </activity>
+        <activity android:name="com.finalproject.singlechat.ChatOnlyOne" >
+        </activity>
+        <activity android:name="com.finalproject.singlechat.OnlyOneInMap" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.MainActivity" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.ImageAdapter" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.DetailsInfo" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.JSONParser" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.AboutUs" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.GetCategoryDetails" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.Info" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.Item_del" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.Current_loc" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.NearestCenter" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.PositionMap" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.AllDetailsInfo" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.TempDoctor" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.SugarDoctor" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.SetDoctor" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.Pressure" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.Temp" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.Sugar" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.Hospital" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.Webview" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.PositionWithDirection" >
+        </activity>
+        <activity android:name="com.orora.yellowchittagong.CallToNearest" >
+        </activity>
+
+        <receiver
+            android:name="com.finalproject.luggageguard.BluetoothStatereceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.finalproject.SecuritySMSReciever" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.example.finalproject.Send$GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.example.UPDATE_STATUS" />
+                <action android:name="org.danizmax.myapp.BROADCAST_INITIAL_DATA" >
+                </action>
+
+                <category android:name="com.example.notification" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.example.finalproject.Send$GcmMessageHandler" />
+
+        <receiver
+            android:name="com.finalproject.singlechat.ChatOnlyOne$GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.example.UPDATE_STATUS" />
+                <action android:name="org.danizmax.myapp.BROADCAST_INITIAL_DATA" >
+                </action>
+
+                <category android:name="com.example.notification" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.finalproject.singlechat.ChatOnlyOne$GcmMessageHandler" />
+
+        <receiver
+            android:name="com.example.finalproject.GroupList$GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.example.UPDATE_STATUS" />
+                <action android:name="org.danizmax.myapp.BROADCAST_INITIAL_DATA" >
+                </action>
+
+                <category android:name="com.example.notification" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.example.finalproject.GroupList$GcmMessageHandler" />
+
+        <receiver
+            android:name="com.example.Map.PositionMapFragment$GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.example.UPDATE_STATUS" />
+                <action android:name="org.danizmax.myapp.BROADCAST_INITIAL_DATA" >
+                </action>
+
+                <category android:name="com.example.Map" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.example.Map.PositionMapFragment$GcmMessageHandler" />
+
+        <receiver
+            android:name="com.finalproject.singlechat.OnlyOneInMap$GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.example.UPDATE_STATUS" />
+                <action android:name="org.danizmax.myapp.BROADCAST_INITIAL_DATA" >
+                </action>
+
+                <category android:name="com.example.Map" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.finalproject.singlechat.OnlyOneInMap$GcmMessageHandler" />
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB6-St3oKXyp2XoeHyQ80h6XnouwzX9gXo" />
+    </application>
+
+</manifest>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:background="#036560"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:weightSum="5"
+         android:background="#4d4d4d"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_dia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_weight="4"
+            android:text="Report"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"/>
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:drawable/ic_delete"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="4"
+        android:padding="5dp"
+        android:background="#036560"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/border"
+            android:text="Jam"
+            android:textColor="#4d4d4d" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/border"
+            android:text="Accident"
+            android:textColor="#4d4d4d" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:padding="5dp"
+        android:background="#036560"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/border"
+            android:text="Police"
+            android:textColor="#4d4d4d" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/border"
+            android:text="Check in"
+            android:textColor="#4d4d4d" />
+    </LinearLayout>
+    
+</LinearLayout> 

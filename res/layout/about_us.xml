@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDA0E"
+    android:orientation="vertical"
+    android:padding="7dp"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="#FFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="#8E2800"
+        android:onClick="Two"
+        android:padding="15dp"
+        android:text="Team members"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_weight="1"
+        android:background="#8E2800"
+        android:padding="15dp"
+        android:onClick="One"
+        android:text="International Islamic University Chittagong"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#800080"
+        android:textSize="50sp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

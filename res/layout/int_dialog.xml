@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#E0E0E0">
+    
+ 
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginTop="1dp"
+    android:weightSum="5"
+    android:orientation="horizontal"
+    android:background="#000000">
+    
+       <ImageView
+        android:id="@+id/image1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+        android:layout_weight="1.2"
+        android:layout_margin="5dp" />
+        
+       <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.8"
+        android:textSize="18sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        android:text="Nearest EIN Center" />
+
+</LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:orientation="vertical"
+    android:background="#606060">
+      
+        <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"/>
+      
+      </LinearLayout>
+      
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:orientation="horizontal"
+    android:background="#000000" >
+       
+         <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+      
+      </LinearLayout>
+      
+     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:orientation="vertical"
+    android:background="#0B8D8F" >
+    
+    <LinearLayout
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+       <TextView
+        android:id="@+id/txtInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:text="INTERNET connection required"/>
+        
+       <TextView
+        android:id="@+id/txtInt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:text="TURN ON internet connection of your device" />
+
+   </LinearLayout>
+
+   </LinearLayout>
+   
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:orientation="horizontal" 
+    android:background="#000000">
+        
+        <TextView
+        android:id="@+id/text11"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+   </LinearLayout>
+   
+      <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginBottom="1dp"
+    android:weightSum="7"
+    android:orientation="horizontal" 
+    android:background="#A8A8A8">
+        
+       <TextView
+        android:id="@+id/text13"
+       android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+          
+      <Button
+        android:id="@+id/btnOk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="Close" />
+      
+       <TextView
+        android:id="@+id/text14"
+       android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    
+    </LinearLayout>
+    
+
+</LinearLayout>

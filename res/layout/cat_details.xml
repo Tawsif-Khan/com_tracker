@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9A9A9"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/image_home"
+            	android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#242001"
+                android:src="@drawable/home_pn" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="#FFEC56"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/info"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn_selector"
+                android:src="@drawable/info"
+                android:text="Information"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ext_map"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Map location"
+                android:background="@drawable/bg_btn_selector"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.82" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageviewing"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.56"
+                android:scaleType="fitCenter"
+                android:src="@drawable/abcd" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

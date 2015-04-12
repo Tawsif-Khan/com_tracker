@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0c0a8"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/smsBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="#f7fdfa"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c0c0a8"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="A varification code has been sent to your mobile.Wait until it&apos;s varified."
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="41dp"
+            android:hint="Code"
+            android:ems="10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:background="@drawable/bg_border"
+                android:gravity="center"
+                android:text="NEXT"
+                android:textColor="#f7fdfa"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/inactivebtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:background="@drawable/bg_border"
+                android:alpha="0.3"
+                android:gravity="center"
+                android:text="NEXT"
+                android:textColor="#f7fdfa"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+   
+
+</LinearLayout>

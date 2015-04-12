@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill"
+    android:gravity="top"
+    android:weightSum="10"
+    android:orientation="vertical" >
+<!--     <FrameLayout  -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="@dimen/colorstrip"/> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
+
+        <EditText
+            android:id="@+id/group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:ems="10"
+            android:inputType="textCapSentences"
+            android:focusableInTouchMode="true"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Give a group name"
+            android:textCursorDrawable="@null" >
+        </EditText>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_weight="7.5" />
+
+    <FrameLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="bottom" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_gravity="top" >
+
+            <Button
+                android:id="@+id/cancelbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/bg_border"
+                android:textColor="#f7fdfa"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/donebtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/bg_border"
+                android:textColor="#f7fdfa"
+                android:text="Done" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

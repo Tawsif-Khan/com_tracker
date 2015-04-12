@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:background="#c0c0a8"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="5" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth"
+            android:layout_weight="4"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+        <Switch
+            android:id="@+id/btSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="left"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="fill_horizontal"
+        android:padding="10dp"
+        android:weightSum="10"
+        android:background="@android:drawable/list_selector_background"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/setAlarm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="8"
+            android:text="Set Alarm"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_alignParentTop="true"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/textView1" />
+
+    </LinearLayout>
+    
+    
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connected device :"
+        android:layout_gravity="left"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/deviceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No device"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	</LinearLayout>
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Device List"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    
+	<View android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:background="#d9e68e"/>
+	
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    
+
+</LinearLayout>
